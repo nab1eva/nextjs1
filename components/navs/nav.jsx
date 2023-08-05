@@ -13,53 +13,55 @@ const Nav = () => {
     setOpen(!open);
   };
   return (
-    <div className="nav-container">
-      <div className="text-[23px] font-semibold">
-        <Link href="/">Vodiy Parfum</Link>
-      </div>
-      <ul id="navbar" className={(open ? " left-0" : " -left-[300px]")}>
-        <li>
-          <Link className="navlink" href="/">
-            Asosiy
-          </Link>
-        </li>
-        <li>
-          <Link className="navlink" href="/about">
-            Biz haqimizda
-          </Link>
-        </li>
-        <li>
-          <Link className="navlink" href="/contact">
-            Aloqa
-          </Link>
-        </li>
-        <li>
-          <Link className="navlink" href="/orderhistory">
-            Buyurtmalar tarixi
-          </Link>
-        </li>
-        <li>
-          <Link href="/cartshopping">
-            <AiOutlineShoppingCart className="cart"/>
-          </Link>
-        </li>
-        <li>
-          <FiLogIn className="login"/>
-        </li>
+    <nav>
+      <div className="nav-container">
+        <div className="text-[23px] font-semibold">
+          <Link href="/">Vodiy Parfum</Link>
+        </div>
+        <ul id="navbar" className={open ? " left-0" : " -left-[300px]"}>
+          <li>
+            <Link className="navlink" href="/">
+              Asosiy
+            </Link>
+          </li>
+          <li>
+            <Link className="navlink" href="/about">
+              Biz haqimizda
+            </Link>
+          </li>
+          <li>
+            <Link className="navlink" href="/contact">
+              Aloqa
+            </Link>
+          </li>
+          <li>
+            <Link className="navlink" href="/orderhistory">
+              Buyurtmalar tarixi
+            </Link>
+          </li>
+          <li>
+            <Link href="/cartshopping">
+              <AiOutlineShoppingCart className="cart" />
+            </Link>
+          </li>
+          <li>
+            <FiLogIn className="login" />
+          </li>
+          <div
+            onClick={openBar}
+            className="text-white absolute top-2 right-3 text-[24px] cursor-pointer max-[700px]:block hidden"
+          >
+            <i className="fa-solid fa-xmark"></i>
+          </div>
+        </ul>
         <div
           onClick={openBar}
-          className="text-white absolute top-2 right-3 text-[24px] cursor-pointer max-[700px]:block hidden"
+          className="hidden max-[700px]:block text-[24px] cursor-pointer"
         >
-          <i className="fa-solid fa-xmark"></i>
+          <i className="fa-solid fa-bars"></i>
         </div>
-      </ul>
-      <div
-        onClick={openBar}
-        className="hidden max-[700px]:block text-[24px] cursor-pointer"
-      >
-        <i className="fa-solid fa-bars"></i>
       </div>
-    </div>
+    </nav>
   );
 };
 
