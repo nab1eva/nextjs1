@@ -44,9 +44,7 @@ const Carusel = ({ products }) => {
       {products?.map((pr) => {
         if (pr !== null) {
           return (
-            <div className="slider"
-              key={pr}
-            >
+            <div className="slider" key={pr}>
               <Image
                 src={pr?.images?.url}
                 alt="product img"
@@ -56,6 +54,7 @@ const Carusel = ({ products }) => {
                   objectFit: "cover",
                   height: "280px",
                   width: "100%",
+                  borderRadius: "20px 20px 0 0",
                 }}
               />
               <p className="slider-text">{pr?.title}</p>

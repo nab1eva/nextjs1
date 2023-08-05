@@ -26,7 +26,7 @@ body {
   background-color: rgb(9, 9, 82);
 }
 main {
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 h2 {
@@ -43,14 +43,26 @@ h2 {
   background-color: #ffffff2b;
 }
 
-.slider-text{
+.slider-text {
   color: white;
   background-color: rgba(255, 255, 255, 0.315);
   text-align: center;
   padding-bottom: 10px;
   padding-top: 10px;
+  border-radius: 0 0 20px 20px;
 }
 
-.slider{
+.slider {
   padding: 10px;
+}
+
+.category-text {
+  display: block;
+  width: 100%;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.315);
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 0 0 20px 20px;
 }
