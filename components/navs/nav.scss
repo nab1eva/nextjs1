@@ -1,18 +1,24 @@
-.nav-container{
-    margin: 10px auto;
-    padding: 20px!important;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    color: white;
-    background-color: #ffffff2b;
-    border-radius: 20px;
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px !important;
+  background-color: rgb(9, 9, 82);
+}
+
+.nav-container {
+  padding: 20px !important;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #ffffff2b;
+  border-radius: 20px;
 }
 #navbar {
   display: flex;
@@ -42,14 +48,14 @@
   }
 }
 
-.cart{
-  &:hover{
+.cart {
+  &:hover {
     color: green;
   }
 }
-.login{
+.login {
   cursor: pointer;
-  &:hover{
+  &:hover {
     color: red;
   }
 }

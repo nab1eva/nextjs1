@@ -44,7 +44,7 @@ const Carusel = ({ products }) => {
       {products?.map((pr) => {
         if (pr !== null) {
           return (
-            <div
+            <div className="slider"
               key={pr}
             >
               <Image
@@ -58,7 +58,7 @@ const Carusel = ({ products }) => {
                   width: "100%",
                 }}
               />
-              <p className="text-center">{pr?.title}</p>
+              <p className="slider-text">{pr?.title}</p>
             </div>
           );
         }

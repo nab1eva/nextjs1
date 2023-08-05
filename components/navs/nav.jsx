@@ -18,7 +18,7 @@ const Nav = () => {
         <div className="text-[23px] font-semibold">
           <Link href="/">Vodiy Parfume</Link>
         </div>
-        <ul id="navbar" className={open ? " left-0" : " -left-[300px]"}>
+        <ul id="navbar" className={open ? " right-0" : " -right-[300px]"}>
           <li>
             <Link className="navlink" href="/">
               Asosiy
