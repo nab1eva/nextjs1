@@ -6,11 +6,10 @@ const Carusel = ({ products }) => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 100,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 2000,
     variableWidth: false,
     responsive: [
       {

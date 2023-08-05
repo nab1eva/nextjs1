@@ -25,12 +25,9 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <Nav />
-        <div
-          style={{ height: "calc(100vh - 100px)" }}
-          className=" text-gray-600"
-        >
+  
           <main>{children}</main>
-        </div>
+    
         <Footer />
       </body>
     </html>

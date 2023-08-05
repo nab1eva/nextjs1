@@ -3,15 +3,11 @@
 @tailwind utilities;
 
 .container {
-  width: 90%;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
 }
-@media (min-width: 1700px) {
-  .container {
-    width: 1600px;
-  }
-}
+
 
 .slick-prev,
 .slick-next {
@@ -20,6 +16,10 @@
 .slick-prev::before,
 .slick-next::before {
   display: none;
+}
+
+*{
+  transition: 0.5s ease all;
 }
 
 body {
@@ -65,4 +65,11 @@ h2 {
   padding-bottom: 10px;
   padding-top: 10px;
   border-radius: 0 0 20px 20px;
+
+}
+.category-text:hover{
+  background-color: rgb(9, 9, 82);
+  color: white;
+  font-size: 18px;
+
 }

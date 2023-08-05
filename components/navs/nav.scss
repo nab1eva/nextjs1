@@ -4,15 +4,13 @@ nav {
   right: 0;
   left: 0;
   z-index: 10;
-  width: 90%;
   margin: 0 auto;
-  padding: 10px !important;
+  padding: 10px 20px !important;
   background-color: rgb(9, 9, 82);
 }
 
 .nav-container {
   padding: 20px !important;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,11 +38,11 @@ nav {
   }
 }
 .navlink {
-  padding: 0.5rem 0;
   border-color: transparent;
   border-bottom-width: 1.5px;
   &:hover {
     color: aqua !important;
+    border-bottom: 1px solid aqua;
   }
 }
 
