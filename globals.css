@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (min-width:1700px){
+  .container{
+    width: 1600px;
+  }
+}
+
+.slick-prev,.slick-next{
+  display: none;
+}
+.slick-prev::before,.slick-next::before{
+  display: none;
+}
+
+body{
+  background-color: rgb(9, 9, 82);
+}
+main{
+  padding-top: 80px;
+}
