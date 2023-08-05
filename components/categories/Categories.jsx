@@ -4,7 +4,7 @@ import Link from "next/link";
 const Categories = ({categories}) => {
   console.log(categories);
   return (
-    <div className="grid grid-cols-1 min-[500px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 containr gap-3">
+    <div className="grid grid-cols-1 min-[500px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 container gap-3">
       {categories?.map((ctg) =>
         <div key={ctg._id}>
           <Image

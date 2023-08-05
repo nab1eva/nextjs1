@@ -16,7 +16,7 @@ const Nav = () => {
     <nav>
       <div className="nav-container">
         <div className="text-[23px] font-semibold">
-          <Link href="/">Vodiy Parfum</Link>
+          <Link href="/">Vodiy Parfume</Link>
         </div>
         <ul id="navbar" className={open ? " left-0" : " -left-[300px]"}>
           <li>

@@ -25,18 +25,18 @@ export default async function HomePage() {
   return (
     <div>
       <div>
-        <h2 className="text-center text-2xl py-3 font-semibold">
+        <h2>
           Yangi Mahsulotlar
         </h2>
-        <div className="container border-2 rounded p-3">
+        <div className="container box">
           <Carusel products={latestProducts} />
         </div>
       </div>
       <div className="pb-5">
-        <h2 className="text-center text-2xl py-4 font-semibold">
+        <h2>
           Mahsulotlar kategoriyasi
         </h2>
-        <Categories categories={categories}/>
+        <Categories className="box" categories={categories}/>
       </div>
     </div>
   );

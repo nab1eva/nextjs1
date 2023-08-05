@@ -10,7 +10,7 @@ import Nav from "@/components/navs/nav";
 import Footer from "@/components/footer/footer";
 
 export const metadata = {
-  title: "E-commerce",
+  title: "Vodiy Parfume",
   description: "E-commerce site for shops!",
 };
 
